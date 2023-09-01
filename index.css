@@ -1,0 +1,32 @@
+/*CSS Reset Rule*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lora', serif;
+	font-size: 10;
+}
+
+nav{
+	background-color: #FFFFF0;
+}
+.nav{
+	padding: 0.5 rem;
+	margin: 2 rem;
+	list-style-type: none;
+}
+nav img{
+	width: 50px;
+	height: 50px;
+}
+
+#landing-section{
+	background-color: #C9C0BB;
+}
+
+#landing-section img {
+	oveflow-clip-margin: content-box;
+	overflow: clip;
+	border-color: black;
+}
