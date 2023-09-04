@@ -129,33 +129,6 @@ background-image: url(https://static.vecteezy.com/system/resources/previews/024/
 }
 
 
-/*Headers*/
-#headers{
-   text-decoration: none;
-   background:
-    linear-gradient(
-      to right,
-      #EDAEC0,
-      #EDAEC0
-    ),
-    linear-gradient(
-      to right,
-      rgba(255, 0, 0, 1),
-      rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1)
-  );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
- }
-
-#headers:hover{
- background-size: 0 3px, 100% 3px;
-}
-
-/*End of Header*/
-
 /*card header*/
 
 
@@ -175,9 +148,46 @@ background-image: url(https://static.vecteezy.com/system/resources/previews/024/
   width: 100%;
 }
 
-#tools{
-  background: none;
+
+.fa {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+
+
 }
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: lightpink;
+  color: white;
+
+}
+
+/* Instagram */
+.fa-instagram {
+  background: lightpink;
+  color: white;
+}
+
+/* Github */
+.fa-github {
+  background: lightpink;
+  color: white;
+}
+
+
+
+
+
 
 
 
