@@ -4,29 +4,183 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Lora', serif;
-	font-size: 10;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  background-color: #C9C0BB;
+  max-width:100%; overflow-x:hidden;
+  background-image: url(./images/top.gif);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: right bottom;
+  background-attachment: fixed;
+  transition: background-color 0.5s ease;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+
 nav{
-	background-color: #FFFFF0;
+ background-image: url(./images/drip.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: static;
 }
-.nav{
-	padding: 0.5 rem;
-	margin: 2 rem;
-	list-style-type: none;
-}
+
 nav img{
 	width: 50px;
 	height: 50px;
 }
+navbar{
+  font-size: 2 rem;
+}
+
 
 #landing-section{
-	background-color: #C9C0BB;
-}
-
-#landing-section img {
 	oveflow-clip-margin: content-box;
 	overflow: clip;
-	border-color: black;
+	background-image: url(https://i.pinimg.com/originals/66/2c/02/662c023c657f6b08aa23bb3d19da2d21.gif);
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+
 }
+#landing {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+}
+
+/*Start of animation for text*/
+
+/*End of animation for text*/
+
+#landing-section h1{
+	font-family: 'Beth Ellen', cursive;
+	animation: fadeIn 5s;
+	font-size: 10vh;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+#projects-container{
+background-image: url(https://static.vecteezy.com/system/resources/previews/024/323/276/original/light-pastel-pink-watercolor-splash-dot-background-png.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: contain;
+}
+
+
+
+/*Flip Card*/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: none;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: lightpink;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+/*Headers*/
+#headers{
+   text-decoration: none;
+   background:
+    linear-gradient(
+      to right,
+      #EDAEC0,
+      #EDAEC0
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+ }
+
+#headers:hover{
+ background-size: 0 3px, 100% 3px;
+}
+
+/*End of Header*/
+
+/*card header*/
+
+
+/* The element to apply the animation to */
+
+
+#headingOne, #headingTwo, #headingThree {
+  width: 150px;
+  height: 50px;
+  background-color: lightpink;
+  background-position: left;
+  background-attachment: scroll;
+  transition: width 2s;
+}
+
+#headingOne:hover, #headingTwo:hover, #headingThree:hover{
+  width: 100%;
+}
+
+#tools{
+  background: none;
+}
+
+
+
+
+
+
