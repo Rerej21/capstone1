@@ -43,8 +43,9 @@ nav img{
   font-size: 2 rem;
   }
 
-#navbarSupportedContent{
-  display: inline;
+.flip-card-front img{
+  width: 200px;
+  height: 200px;
 }
 
 
